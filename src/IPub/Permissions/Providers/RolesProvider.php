@@ -30,8 +30,10 @@ use IPub\Permissions\Exceptions;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-class RolesProvider extends Nette\Object implements IRolesProvider
+class RolesProvider implements IRolesProvider
 {
+    use Nette\SmartObject;
+
 	/**
 	 * @var Entities\IRole[]
 	 */

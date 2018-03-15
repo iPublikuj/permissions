@@ -21,8 +21,10 @@ use Nette;
 use IPub;
 use IPub\Permissions\Exceptions;
 
-class Role extends Nette\Object implements IRole
+class Role implements IRole
 {
+    use Nette\SmartObject;
+
 	/**
 	 * @var string
 	 */

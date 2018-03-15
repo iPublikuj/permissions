@@ -1,0 +1,7 @@
+composer.lock
+vendor
+tests/tmp
+
+#IDE
+.idea
+nbproject

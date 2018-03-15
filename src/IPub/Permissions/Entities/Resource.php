@@ -18,8 +18,10 @@ namespace IPub\Permissions\Entities;
 
 use Nette;
 
-class Resource extends Nette\Object implements IResource
+class Resource implements IResource
 {
+    use Nette\SmartObject;
+
 	/**
 	 * @var string
 	 */

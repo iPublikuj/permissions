@@ -29,8 +29,10 @@ use Nette\Security as NS;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-final class LinkChecker extends Nette\Object implements IChecker
+final class LinkChecker implements IChecker
 {
+	use Nette\SmartObject;
+
 	/**
 	 * @var Application\IPresenterFactory
 	 */
