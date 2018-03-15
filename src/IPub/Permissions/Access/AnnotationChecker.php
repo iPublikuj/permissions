@@ -34,8 +34,10 @@ use IPub\Permissions\Security;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-final class AnnotationChecker extends Nette\Object implements IChecker, ICheckRequirements
+final class AnnotationChecker implements IChecker, ICheckRequirements
 {
+	use Nette\SmartObject;
+
 	/**
 	 * @var NS\User
 	 */

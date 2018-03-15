@@ -33,8 +33,10 @@ use IPub\Permissions\Security;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-final class LatteChecker extends Nette\Object implements IChecker
+final class LatteChecker implements IChecker
 {
+	use Nette\SmartObject;
+
 	/**
 	 * @var NS\User
 	 */

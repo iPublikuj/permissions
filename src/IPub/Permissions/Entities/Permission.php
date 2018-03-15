@@ -18,12 +18,12 @@ namespace IPub\Permissions\Entities;
 
 use Nette;
 use Nette\Utils;
-
 use IPub;
-use IPub\Permissions\Security;
 
-class Permission extends Nette\Object implements IPermission
+class Permission implements IPermission
 {
+	use Nette\SmartObject;
+
 	/**
 	 * Permission resource
 	 *

@@ -25,8 +25,10 @@ use Nette\Application;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-class Configuration extends Nette\Object
+class Configuration
 {
+	use Nette\SmartObject;
+
 	/**
 	 * @var string|NULL
 	 */

@@ -30,8 +30,10 @@ use IPub\Permissions\Exceptions;
  *
  * @author         Adam Kadlec <adam.kadlec@ipublikuj.eu>
  */
-class PermissionsProvider extends Nette\Object implements IPermissionsProvider
+class PermissionsProvider implements IPermissionsProvider
 {
+    use Nette\SmartObject;
+
 	/**
 	 * @var Entities\IPermission[]
 	 */
